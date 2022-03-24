@@ -1,4 +1,4 @@
-/// @description Player's Character Creation Event
+/// @description Settings
 
 hsp = 0;
 vsp = 0;

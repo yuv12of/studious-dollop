@@ -1,4 +1,4 @@
-/// @desc Character step (tick) event
+/// @desc Basic Movement
 // Get player inputs
 
 key_left = keyboard_check(vk_left);
