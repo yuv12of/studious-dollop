@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sTemporaryBlock",
-    "path": "sprites/sTemporaryBlock/sTemporaryBlock.yy",
+    "name": "sMet",
+    "path": "sprites/sMet/sMet.yy",
   },
   "solid": true,
   "visible": true,
