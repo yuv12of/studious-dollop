@@ -1,9 +1,9 @@
 /// @desc Basic Movement
 // Get player inputs
 
-key_left = keyboard_check(vk_left);
-key_right = keyboard_check(vk_right);
-key_jump = keyboard_check_pressed(vk_space);
+key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
+key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
+key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up) or keyboard_check(ord("W"));
 
 // Calculate movement
 var _move = key_right - key_left;
