@@ -5,22 +5,8 @@ key_left = keyboard_check(vk_left) or keyboard_check(ord("A"));
 key_right = keyboard_check(vk_right) or keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space) or keyboard_check_pressed(vk_up) or keyboard_check(ord("W"));
 
-if (key_left) {
-	sprite_index = sMetWalkLeft;
-}
-else if (key_right) {
-	sprite_index = sMetWalkRight;
-}
-
 // Calculate movement
 var _move = key_right - key_left;
-
-if (_move != 0) {
-	image_speed = 1;
-} else {
-	image_speed = 0;
-	image_index = 0;
-}
 
 hsp = _move * walksp;
 
@@ -48,3 +34,14 @@ if (place_meeting(x, y + vsp, oBlock)) {
 	vsp = 0;
 }
 y += vsp;
+
+
+// Animation
+if (_move != 0) {
+	image_speed = 1;
+} else {
+	image_speed = 0;
+	image_index = 0;
+}
+
+if (hsp != 0) image_xscale = sign(hsp);

@@ -2,8 +2,7 @@
   "resources": [
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
-    {"id":{"name":"sMetWalkLeft","path":"sprites/sMetWalkLeft/sMetWalkLeft.yy",},"order":3,},
-    {"id":{"name":"sMetWalkRight","path":"sprites/sMetWalkRight/sMetWalkRight.yy",},"order":4,},
+    {"id":{"name":"sMetWalk","path":"sprites/sMetWalk/sMetWalk.yy",},"order":4,},
     {"id":{"name":"sTemporaryBlock","path":"sprites/sTemporaryBlock/sTemporaryBlock.yy",},"order":0,},
     {"id":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},"order":0,},
   ],
