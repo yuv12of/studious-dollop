@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sMet",
-    "path": "sprites/sMet/sMet.yy",
+    "name": "sMetWalkLeft",
+    "path": "sprites/sMetWalkLeft/sMetWalkLeft.yy",
   },
   "solid": true,
   "visible": true,
