@@ -9,6 +9,7 @@
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":1,},
     {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},"order":3,},
     {"id":{"name":"sTemporaryBlock","path":"sprites/sTemporaryBlock/sTemporaryBlock.yy",},"order":0,},
+    {"id":{"name":"sPortalOff","path":"sprites/sPortalOff/sPortalOff.yy",},"order":4,},
     {"id":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},"order":0,},
   ],
   "Options": [
