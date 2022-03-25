@@ -25,7 +25,6 @@ if (place_meeting(x + hsp, y, oBlock)) {
 }
 x += hsp;
 
-
 // Vertical Collision
 if (place_meeting(x, y + vsp, oBlock)) {
 	while (!place_meeting(x, y +  sign(vsp), oBlock)) {
@@ -34,3 +33,13 @@ if (place_meeting(x, y + vsp, oBlock)) {
 	vsp = 0;
 }
 y += vsp;
+
+// Animation
+if (_move != 0) {
+	image_speed = 1;
+} else {
+	image_speed = 0;
+	image_index = 0;
+}
+
+if (hsp != 0) image_xscale = sign(hsp);
