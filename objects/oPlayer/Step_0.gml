@@ -22,9 +22,9 @@ function is_gonna_collide(posx, posy) {
 	return false;
 }
 
-// Jumping
-// Outrule vertical platforms first
+#region Player jumping
 if (key_jump) {
+	// Outrule vertical platforms first
 	if object_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform) {
 		vsp = -jumpsp
 	}
@@ -33,8 +33,9 @@ if (key_jump) {
 		vsp = -jumpsp
 	}
 }
+#endregion
 
-// Horizontal Collision
+#region Horizontal Collision
 if (is_gonna_collide(x + hsp, y)) {
 	while (!is_gonna_collide(x + sign(hsp), y)) {
 		x = x + sign(hsp);
@@ -42,8 +43,9 @@ if (is_gonna_collide(x + hsp, y)) {
 	hsp = 0;
 }
 x += hsp;
+#endregion
 
-// Vertical Collision
+#region Vertical Collision
 if (is_gonna_collide(x, y + vsp)) {
 	while (!is_gonna_collide(x, y +  sign(vsp))) {
 		y += sign(vsp);
@@ -51,3 +53,4 @@ if (is_gonna_collide(x, y + vsp)) {
 	vsp = 0;
 }
 y += vsp;
+#endregion
