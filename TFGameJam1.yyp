@@ -1,8 +1,11 @@
 {
   "resources": [
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
+    {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":2,},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"sMet","path":"sprites/sMet/sMet.yy",},"order":2,},
+    {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":1,},
+    {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},"order":3,},
     {"id":{"name":"sTemporaryBlock","path":"sprites/sTemporaryBlock/sTemporaryBlock.yy",},"order":0,},
     {"id":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},"order":0,},
   ],
@@ -18,6 +21,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
+    {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
+    {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},},
   ],
   "Folders": [
