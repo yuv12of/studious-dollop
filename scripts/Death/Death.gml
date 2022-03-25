@@ -3,6 +3,7 @@
 
 enum DEATH_TYPE {
 	DUMMY,
+	PIT,
 	SPIKES,
 	LAVA,
 }

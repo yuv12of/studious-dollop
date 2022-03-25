@@ -43,3 +43,12 @@ if (_move != 0) {
 }
 
 if (hsp != 0) image_xscale = -0.5 * sign(hsp);
+
+/* Pit death */
+if (view_get_hport(0) < self.y) {
+	location = {
+		x: self.x,
+		y: self.y,
+	}
+	Death(self, self, DEATH_TYPE.PIT, location, current_time);
+}
