@@ -42,4 +42,4 @@ if (_move != 0) {
 	image_index = 0;
 }
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0) image_xscale = -0.5 * sign(hsp);
