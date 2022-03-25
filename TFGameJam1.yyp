@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sMetJump","path":"sprites/sMetJump/sMetJump.yy",},"order":5,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"sMetWalk","path":"sprites/sMetWalk/sMetWalk.yy",},"order":4,},

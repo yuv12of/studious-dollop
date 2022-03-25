@@ -13,7 +13,7 @@ hsp = _move * walksp;
 vsp = vsp + grv;
 
 if (place_meeting(x, y + 1, oBlock)) and (key_jump) {
-	vsp = -jumpsp
+	vsp = -jumpsp;
 }
 
 // Horizontal Collision
@@ -34,12 +34,37 @@ if (place_meeting(x, y + vsp, oBlock)) {
 }
 y += vsp;
 
+
+
 // Animation
-if (_move != 0) {
+function is_moving() {
+	return (hsp != 0) or (vsp != 0);
+}
+
+/* If not jumping or falling */
+if (vsp == 0 and hsp != 0 and sprite_index != sMetWalk) {
+	sprite_index = sMetWalk;
+}
+
+/* If currently jumping - going up */
+if (vsp > 0) {
+	if (sprite_index != sMetJump) {
+		sprite_index = sMetJump;
+		image_speed = 1;
+		image_index = 0;
+	}
+}
+if (sprite_index == sMetJump and image_index == 5) {
+	image_speed = 0;
+}
+
+/* If not moving at all, stop animation. */
+if (is_moving()) {
 	image_speed = 1;
 } else {
 	image_speed = 0;
 	image_index = 0;
 }
 
+/* If going the opposite way, flip image. */
 if (hsp != 0) image_xscale = sign(hsp);
