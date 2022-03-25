@@ -25,7 +25,7 @@ function is_gonna_collide(posx, posy) {
 // Jumping
 // Outrule vertical platforms first
 if (key_jump) {
-	if object_exists(oVerticalPlatform) and place_meeting(x, y + 1 + (oVerticalPlatform.spd * sign(oVerticalPlatform.dest)), oVerticalPlatform) {
+	if object_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform) {
 		vsp = -jumpsp
 	}
 	// Not a vertical platform, calculate collision normally
