@@ -4,6 +4,7 @@
 enum DEATH_TYPE {
 	DUMMY,
 	SPIKES,
+	LAVA,
 }
 
 global.deaths = []
