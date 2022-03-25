@@ -41,27 +41,25 @@ function is_moving() {
 	return (hsp != 0) or (vsp != 0);
 }
 
-/* If not jumping or falling */
-if (vsp == 0 and hsp != 0 and sprite_index != sMetWalk) {
-	sprite_index = sMetWalk;
-}
-
-/* If currently jumping - going up */
-if (vsp > 0) {
-	if (sprite_index != sMetJump) {
+/* Jumping */
+if (vsp != 0) {
+	if (sprite_index == sMetJump) {
+		if (image_index == 5) {
+			image_speed = 0;
+		}
+	} else {
 		sprite_index = sMetJump;
-		image_speed = 1;
-		image_index = 0;
+		image_speed = 1;	
 	}
-}
-if (sprite_index == sMetJump and image_index == 5) {
-	image_speed = 0;
-}
-
-/* If not moving at all, stop animation. */
-if (is_moving()) {
+/* Walking */
+} else if (hsp != 0) {
+	if (sprite_index != sMetWalk) {
+		sprite_index = sMetWalk;
+	}
 	image_speed = 1;
+/* Stationary */
 } else {
+	sprite_index = sMetWalk;
 	image_speed = 0;
 	image_index = 0;
 }
