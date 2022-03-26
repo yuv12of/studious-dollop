@@ -24,6 +24,7 @@ function is_gonna_collide(posx, posy) {
 
 #region Player jumping
 if (key_jump) {
+	audio_play_sound(sndJump, 1, false);
 	// Outrule vertical platforms first
 	if (instance_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform)) {
 		vsp = -jumpsp

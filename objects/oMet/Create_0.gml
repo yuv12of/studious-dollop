@@ -8,4 +8,4 @@ done = 0;
 image_speed = 1;
 image_index = 0;
 alarm[0] = 100; // Restart after 1 second
-//audio_play_sound(snDeath, 10, false);
+audio_play_sound(sndDeath, 10, false);
