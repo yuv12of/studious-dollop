@@ -21,6 +21,7 @@
     {"id":{"name":"tGrass","path":"tilesets/tGrass/tGrass.yy",},"order":1,},
     {"id":{"name":"sSpikes","path":"sprites/sSpikes/sSpikes.yy",},"order":4,},
     {"id":{"name":"fMenu","path":"fonts/fMenu/fMenu.yy",},"order":3,},
+    {"id":{"name":"oLevelMusician","path":"objects/oLevelMusician/oLevelMusician.yy",},"order":6,},
     {"id":{"name":"oSpikes","path":"objects/oSpikes/oSpikes.yy",},"order":2,},
     {"id":{"name":"sGrass","path":"sprites/sGrass/sGrass.yy",},"order":8,},
     {"id":{"name":"oLava","path":"objects/oLava/oLava.yy",},"order":4,},
