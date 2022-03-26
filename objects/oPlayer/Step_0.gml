@@ -103,7 +103,7 @@ if (vsp != 0) {
 }
 
 /* If going the opposite way, flip image. */
-if (hsp != 0) image_xscale = 0.5 * sign(hsp);
+if (hsp != 0) image_xscale = player_size * sign(hsp);
 
 /* Pit death */
 if (view_get_hport(0) < self.y) {

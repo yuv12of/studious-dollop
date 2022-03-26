@@ -45,10 +45,10 @@
     "children": [],
   },
   "RoomOrderNodes": [
+    {"roomId":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},},
     {"roomId":{"name":"Level1","path":"rooms/Level1/Level1.yy",},},
     {"roomId":{"name":"Level2","path":"rooms/Level2/Level2.yy",},},
     {"roomId":{"name":"Level3","path":"rooms/Level3/Level3.yy",},},
-    {"roomId":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},

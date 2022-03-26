@@ -3,7 +3,9 @@
 hsp = 3;
 vsp = -4;
 grv = 0.3;
-done = 0;
+
+image_xscale = oPlayer.player_size;
+image_yscale = oPlayer.player_size;
 
 image_speed = 1;
 image_index = 0;
