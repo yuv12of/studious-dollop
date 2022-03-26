@@ -2,7 +2,7 @@
 // You can write your code in this editor
 // Calculate movement
 player = instance_find(oPlayer, 0);
-if (player and player.x == x) {
+if (player and player.x == x and !has_killed) {
 	grv = 0.3;
 	player.jumpsp = 0;
 	player.walksp = 0;
