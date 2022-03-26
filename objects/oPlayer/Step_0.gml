@@ -54,3 +54,44 @@ if (is_gonna_collide(x, y + vsp)) {
 }
 y += vsp;
 #endregion
+
+
+
+// Animation
+
+/* Jumping */
+if (vsp != 0) {
+	is_vsp = true;
+	if (sprite_index == sMetJump) {
+		if (image_index == 4) {
+			image_speed = 0;
+			image_index = 4;
+		} else {
+			image_speed = 1;
+		}
+	} else {
+		sprite_index = sMetJump;
+		image_speed = 1;
+		image_index = 0;
+	}
+/* Walking */
+} else if (hsp != 0) {
+	if (!is_vsp) {
+		if (sprite_index != sMetWalk) {
+			sprite_index = sMetWalk;
+		}
+		image_speed = 1;
+	}
+	is_vsp = false;
+/* Stationary */
+} else {
+	if (!is_vsp) {
+		image_speed = 0;
+		image_index = 0;
+	}
+	is_vsp = false;
+}
+
+/* If going the opposite way, flip image. */
+if (hsp != 0) image_xscale = 0.5 * sign(hsp);
+	
