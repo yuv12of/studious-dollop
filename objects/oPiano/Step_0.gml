@@ -1,6 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
 // Calculate movement
+player = instance_find(oPlayer, 0);
+if (player and player.x == x) {
+	grv = 0.3;
+	player.jumpsp = 0;
+	player.walksp = 0;
+}
+
 
 vsp = vsp + grv;
 
