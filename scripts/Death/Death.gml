@@ -23,7 +23,7 @@ function Death(killer, dead, death_type, death_location, death_time){
 	
 	array_push(global.deaths, death);
 	
-	instance_create_depth(dead.x, dead.y, dead.depth, oMet);
+	instance_create_depth(dead.x, dead.y, 3, oMet);
 	instance_destroy(dead);
 }
 
