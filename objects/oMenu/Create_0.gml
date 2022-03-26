@@ -13,4 +13,6 @@ option = [["Choose Level", "Quit Game"],["0","1","Return to Menu"]];
 
 op_length = array_length(option);
 
+audio_play_sound(sndMainMenu,100,true);
+
 
