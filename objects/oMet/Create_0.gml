@@ -4,7 +4,7 @@ hsp = 3;
 vsp = -4;
 grv = 0.3;
 
-image_xscale = oPlayer.player_size;
+image_xscale = instance_find(oPlayer, 0).image_xscale;
 image_yscale = oPlayer.player_size;
 
 image_speed = 1;
