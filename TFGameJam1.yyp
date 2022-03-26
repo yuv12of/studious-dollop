@@ -29,6 +29,7 @@
     {"id":{"name":"sTemporaryBlock","path":"sprites/sTemporaryBlock/sTemporaryBlock.yy",},"order":0,},
     {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":5,},
     {"id":{"name":"sWaterTop","path":"sprites/sWaterTop/sWaterTop.yy",},"order":7,},
+    {"id":{"name":"sndLevelMusic","path":"sounds/sndLevelMusic/sndLevelMusic.yy",},"order":3,},
     {"id":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},"order":0,},
   ],
   "Options": [
