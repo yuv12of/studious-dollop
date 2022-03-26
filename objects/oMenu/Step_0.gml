@@ -45,6 +45,7 @@ if accept_key {
 				if (room_get_name(i) == "Level" + option[menu_level, pos]) {
 					show_debug_message("Going to into Level" + option[menu_level, pos] + ", AKA room #"+string(i));
 					room_goto(i);
+					audio_stop_sound(sndMainMenu);
 				}
 				
 				i++;
