@@ -3,8 +3,8 @@
     "name": "sTemporaryBlock",
     "path": "sprites/sTemporaryBlock/sTemporaryBlock.yy",
   },
-  "solid": false,
-  "visible": false,
+  "solid": true,
+  "visible": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": null,
@@ -19,8 +19,16 @@
   "physicsFriction": 0.2,
   "physicsStartAwake": true,
   "physicsKinematic": false,
-  "physicsShapePoints": [],
-  "eventList": [],
+  "physicsShapePoints": [
+    {"x":0.0,"y":0.0,},
+    {"x":512.0,"y":0.0,},
+    {"x":512.0,"y":512.0,},
+    {"x":0.0,"y":512.0,},
+  ],
+  "eventList": [
+    {"isDnD":false,"eventNum":1,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
@@ -28,7 +36,7 @@
     "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
-  "name": "oBlock",
+  "name": "oMovingPlatform",
   "tags": [],
   "resourceType": "GMObject",
 }
