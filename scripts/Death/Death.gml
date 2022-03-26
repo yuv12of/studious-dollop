@@ -9,7 +9,7 @@ enum DEATH_TYPE {
 	DROWNING,
 }
 
-global.deaths = []
+global.deaths = [];
 
 function Death(killer, dead, death_type, death_location, death_time){
 	death = {
@@ -23,4 +23,8 @@ function Death(killer, dead, death_type, death_location, death_time){
 	
 	instance_create_depth(dead.x, dead.y, 0, oMet);
 	instance_destroy(dead);
+}
+
+function ClearDeaths() {
+	global.deaths = [];
 }
