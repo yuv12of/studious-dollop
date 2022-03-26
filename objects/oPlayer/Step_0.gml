@@ -62,17 +62,25 @@ y += vsp;
 /* Jumping */
 if (vsp != 0) {
 	is_vsp = true;
-	if (sprite_index == sMetJump) {
-		if (image_index == 4) {
-			image_speed = 0;
-			image_index = 4;
+	if (vsp < 0) {
+		if (sprite_index == sMetJump) {
+			if (image_index == 4) {
+				image_speed = 0;
+				image_index = 4;
+			} else {
+				image_speed = 1;
+			}
 		} else {
+			sprite_index = sMetJump;
 			image_speed = 1;
+			image_index = 0;
 		}
 	} else {
-		sprite_index = sMetJump;
-		image_speed = 1;
-		image_index = 0;
+		if (sprite_index != sMetFall) {
+			sprite_index = sMetFall;
+			image_speed = 2;
+			image_index = 0;
+		}
 	}
 /* Walking */
 } else if (hsp != 0) {
@@ -86,6 +94,7 @@ if (vsp != 0) {
 /* Stationary */
 } else {
 	if (!is_vsp) {
+		sprite_index = sMetWalk;
 		image_speed = 0;
 		image_index = 0;
 	}
