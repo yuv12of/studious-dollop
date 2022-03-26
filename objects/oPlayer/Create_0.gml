@@ -10,10 +10,13 @@ collidables = [oBlock, oMovingPlatform];
 
 key_down = 0;
 
-image_xscale = 0.5;
-image_yscale = 0.5;
+image_xscale = player_size;
+image_yscale = player_size;
 
 global.xstart = xstart;
 global.ystart = ystart;
 
 drowning = 0;
+if (not audio_is_playing(sndLevelMusic)) {
+	audio_play_sound(sndLevelMusic, 100, true);
+}

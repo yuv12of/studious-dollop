@@ -12,6 +12,8 @@ enum DEATH_TYPE {
 global.deaths = [];
 
 function Death(killer, dead, death_type, death_location, death_time){
+	audio_stop_all();
+	audio_play_sound(sndDeath, 10, false);
 	death = {
 		death_type: death_type,
 		killer: killer,
@@ -21,7 +23,7 @@ function Death(killer, dead, death_type, death_location, death_time){
 	
 	array_push(global.deaths, death);
 	
-	instance_create_depth(dead.x, dead.y, 0, oMet);
+	instance_create_depth(dead.x, dead.y, dead.depth, oMet);
 	instance_destroy(dead);
 }
 

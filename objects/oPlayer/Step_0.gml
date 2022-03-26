@@ -24,12 +24,15 @@ function is_gonna_collide(posx, posy) {
 
 #region Player jumping
 if (key_jump) {
+
 	// Outrule vertical platforms first
 	if (instance_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform)) {
-		vsp = -jumpsp
+		vsp = -jumpsp;
+		audio_play_sound(sndJump, 1, false);
 	}
 	// Not a vertical platform, calculate collision normally
 	else if (is_gonna_collide(x, y + 1)) {
+		audio_play_sound(sndJump, 1, false);
 		vsp = -jumpsp
 	}
 }
@@ -60,17 +63,25 @@ y += vsp;
 /* Jumping */
 if (vsp != 0) {
 	is_vsp = true;
-	if (sprite_index == sMetJump) {
-		if (image_index == 4) {
-			image_speed = 0;
-			image_index = 4;
+	if (vsp < 0) {
+		if (sprite_index == sMetJump) {
+			if (image_index == 4) {
+				image_speed = 0;
+				image_index = 4;
+			} else {
+				image_speed = 1;
+			}
 		} else {
+			sprite_index = sMetJump;
 			image_speed = 1;
+			image_index = 0;
 		}
 	} else {
-		sprite_index = sMetJump;
-		image_speed = 1;
-		image_index = 0;
+		if (sprite_index != sMetFall) {
+			sprite_index = sMetFall;
+			image_speed = 2;
+			image_index = 0;
+		}
 	}
 /* Walking */
 } else if (hsp != 0) {
@@ -84,6 +95,7 @@ if (vsp != 0) {
 /* Stationary */
 } else {
 	if (!is_vsp) {
+		sprite_index = sMetWalk;
 		image_speed = 0;
 		image_index = 0;
 	}
@@ -91,7 +103,7 @@ if (vsp != 0) {
 }
 
 /* If going the opposite way, flip image. */
-if (hsp != 0) image_xscale = 0.5 * sign(hsp);
+if (hsp != 0) image_xscale = player_size * sign(hsp);
 
 /* Pit death */
 if (view_get_hport(0) < self.y) {
