@@ -12,7 +12,6 @@ enum DEATH_TYPE {
 global.deaths = [];
 
 function Death(killer, dead, death_type, death_location, death_time){
-	audio_stop_all();
 	audio_play_sound(sndDeath, 10, false);
 	death = {
 		death_type: death_type,
