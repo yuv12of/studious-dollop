@@ -1,7 +1,7 @@
 // @description Startup
 
 // Config Variables
-vspd = 1 ; // Vertical Movement speed
+vspd = 2 ; // Vertical Movement speed
 hspd = 1 ; // Horizontal Movement speed
 vdistnc = 544 - 192; // Vertical Travel distance
 hdistnc = 0; // Horizontal Travel distance

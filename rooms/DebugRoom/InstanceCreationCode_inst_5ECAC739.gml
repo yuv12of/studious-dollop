@@ -2,7 +2,7 @@
 
 // Config Variables
 vspd = 1 ; // Vertical Movement speed
-hspd = 1 ; // Horizontal Movement speed
+hspd = 2 ; // Horizontal Movement speed
 vdistnc = 0; // Vertical Travel distance
 hdistnc = 1056 - 640; // Horizontal Travel distance
 startposy = y; // Starting Vertical position
