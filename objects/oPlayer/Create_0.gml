@@ -18,6 +18,3 @@ global.xstart = xstart;
 global.ystart = ystart;
 
 drowning = 0;
-if (not audio_is_playing(sndLevelMusic)) {
-	audio_play_sound(sndLevelMusic, 100, true);
-}

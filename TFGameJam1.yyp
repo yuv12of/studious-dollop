@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"oTutorialMusic","path":"objects/oTutorialMusic/oTutorialMusic.yy",},"order":7,},
     {"id":{"name":"sMetMet","path":"sprites/sMetMet/sMetMet.yy",},"order":7,},
     {"id":{"name":"sndJump","path":"sounds/sndJump/sndJump.yy",},"order":0,},
     {"id":{"name":"sndMainMenu","path":"sounds/sndMainMenu/sndMainMenu.yy",},"order":2,},
