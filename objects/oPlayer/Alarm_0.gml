@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+show_debug_message("Drowned at: " + string(x) + ", " + string(y));
 location = {
 	x: x,
 	y: y,

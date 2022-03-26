@@ -56,6 +56,7 @@ if (view_get_hport(0) < self.y) {
 /* Drowning */
 if (place_meeting(x, y - 25, oWater)) {
 	if (!drowning) {
+		show_debug_message("Drowning at: " + string(x) + ", " + string(y));
 		drowning = true;
 		alarm[0] = room_speed * 3;
 	}
