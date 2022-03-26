@@ -1,5 +1,6 @@
 {
   "resources": [
+    {"id":{"name":"sWater","path":"sprites/sWater/sWater.yy",},"order":6,},
     {"id":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"order":0,},
     {"id":{"name":"sBeemetMet","path":"sprites/sBeemetMet/sBeemetMet.yy",},"order":3,},
     {"id":{"name":"sLava","path":"sprites/sLava/sLava.yy",},"order":5,},
@@ -11,6 +12,8 @@
     {"id":{"name":"Death","path":"scripts/Death/Death.yy",},"order":0,},
     {"id":{"name":"sMet","path":"sprites/sMet/sMet.yy",},"order":2,},
     {"id":{"name":"sTemporaryBlock","path":"sprites/sTemporaryBlock/sTemporaryBlock.yy",},"order":0,},
+    {"id":{"name":"oWater","path":"objects/oWater/oWater.yy",},"order":5,},
+    {"id":{"name":"sWaterTop","path":"sprites/sWaterTop/sWaterTop.yy",},"order":7,},
     {"id":{"name":"DebugRoom","path":"rooms/DebugRoom/DebugRoom.yy",},"order":0,},
   ],
   "Options": [

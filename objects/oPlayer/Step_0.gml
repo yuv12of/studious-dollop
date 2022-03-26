@@ -52,3 +52,5 @@ if (view_get_hport(0) < self.y) {
 	}
 	Death(self, self, DEATH_TYPE.PIT, location, current_time);
 }
+
+/* Water death */
