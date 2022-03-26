@@ -25,7 +25,7 @@ function is_gonna_collide(posx, posy) {
 #region Player jumping
 if (key_jump) {
 	// Outrule vertical platforms first
-	if object_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform) {
+	if (instance_exists(oMovingPlatform) and place_meeting(x, y + 1 + (oMovingPlatform.vspd * sign(oMovingPlatform.vdest)), oMovingPlatform)) {
 		vsp = -jumpsp
 	}
 	// Not a vertical platform, calculate collision normally
@@ -54,8 +54,6 @@ if (is_gonna_collide(x, y + vsp)) {
 }
 y += vsp;
 #endregion
-
-
 
 // Animation
 
@@ -103,4 +101,25 @@ if (vsp != 0) {
 
 /* If going the opposite way, flip image. */
 if (hsp != 0) image_xscale = 0.5 * sign(hsp);
+
+/* Pit death */
+if (view_get_hport(0) < self.y) {
+	location = {
+		x: self.x,
+		y: self.y,
+	}
+	Death(room, self, DEATH_TYPE.PIT, location, current_time);
+}
+
+/* Drowning */
+if (position_meeting(x, y - 12, oWater)) {
+	if (!drowning) {
+		drowning = true;
+		alarm[0] = room_speed * 3;
+	}
+} else {
+	drowning = false;
+	alarm[0] = -1;
+}
+
 	
