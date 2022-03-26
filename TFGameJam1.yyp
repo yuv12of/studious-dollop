@@ -9,6 +9,7 @@
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},"order":4,},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":2,},
     {"id":{"name":"sMenu","path":"sprites/sMenu/sMenu.yy",},"order":1,},
+    {"id":{"name":"sndTutorialMusic","path":"sounds/sndTutorialMusic/sndTutorialMusic.yy",},"order":4,},
     {"id":{"name":"Level1","path":"rooms/Level1/Level1.yy",},"order":1,},
     {"id":{"name":"Level3","path":"rooms/Level3/Level3.yy",},"order":3,},
     {"id":{"name":"Level0","path":"rooms/Level0/Level0.yy",},"order":5,},
