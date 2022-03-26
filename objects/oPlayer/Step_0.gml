@@ -50,7 +50,18 @@ if (view_get_hport(0) < self.y) {
 		x: self.x,
 		y: self.y,
 	}
-	Death(self, self, DEATH_TYPE.PIT, location, current_time);
+	Death(room, self, DEATH_TYPE.PIT, location, current_time);
 }
 
-/* Water death */
+/* Drowning */
+if (place_meeting(x, y - 25, oWater)) {
+	if (!drowning) {
+		drowning = true;
+		alarm[0] = room_speed * 3;
+	}
+} else {
+	drowning = false;
+	alarm[0] = -1;
+}
+
+	

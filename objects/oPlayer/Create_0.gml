@@ -11,3 +11,5 @@ image_yscale = 0.5;
 
 global.xstart = xstart;
 global.ystart = ystart;
+
+drowning = 0;
