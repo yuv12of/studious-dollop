@@ -11,8 +11,8 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "sndLevelMusic",
-  "duration": 0.0,
+  "soundFile": "sndLevelMusic.wav",
+  "duration": 44.8,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
