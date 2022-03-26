@@ -7,6 +7,7 @@ enum DEATH_TYPE {
 	SPIKES,
 	LAVA,
 	DROWNING,
+	PIANO,
 }
 
 global.deaths = [];
