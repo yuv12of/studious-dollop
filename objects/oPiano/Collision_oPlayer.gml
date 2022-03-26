@@ -5,3 +5,5 @@ location = {
 	y: other.y,
 };
 Death(self, other, DEATH_TYPE.PIANO, location, current_time);
+
+alarm[0] = 60;
