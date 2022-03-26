@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sBeemetMet",
-    "path": "sprites/sBeemetMet/sBeemetMet.yy",
+    "name": "sMetMet",
+    "path": "sprites/sMetMet/sMetMet.yy",
   },
   "solid": false,
   "visible": true,
