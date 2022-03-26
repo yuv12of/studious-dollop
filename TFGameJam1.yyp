@@ -1,6 +1,8 @@
 {
   "resources": [
     {"id":{"name":"sMetMet","path":"sprites/sMetMet/sMetMet.yy",},"order":7,},
+    {"id":{"name":"sndJump","path":"sounds/sndJump/sndJump.yy",},"order":0,},
+    {"id":{"name":"sndMainMenu","path":"sounds/sndMainMenu/sndMainMenu.yy",},"order":2,},
     {"id":{"name":"oPortal","path":"objects/oPortal/oPortal.yy",},"order":2,},
     {"id":{"name":"sPortal","path":"sprites/sPortal/sPortal.yy",},"order":3,},
     {"id":{"name":"Level2","path":"rooms/Level2/Level2.yy",},"order":2,},
@@ -19,6 +21,7 @@
     {"id":{"name":"oBlock","path":"objects/oBlock/oBlock.yy",},"order":1,},
     {"id":{"name":"Death","path":"scripts/Death/Death.yy",},"order":0,},
     {"id":{"name":"sBlock","path":"sprites/sBlock/sBlock.yy",},"order":2,},
+    {"id":{"name":"sndDeath","path":"sounds/sndDeath/sndDeath.yy",},"order":1,},
     {"id":{"name":"sMetFall","path":"sprites/sMetFall/sMetFall.yy",},"order":6,},
     {"id":{"name":"oMovingPlatform","path":"objects/oMovingPlatform/oMovingPlatform.yy",},"order":2,},
     {"id":{"name":"sMetJump","path":"sprites/sMetJump/sMetJump.yy",},"order":5,},
