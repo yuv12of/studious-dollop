@@ -92,14 +92,13 @@ if not sleeping {
 	if (!vdistnc or current_vdirection != is_moving_down) and (!hdistnc or current_hdirection != is_moving_right) {
 		sleeping = delay;
 	}
-	
 }
 else {
 	sleeping--;
 }
 
 
-if object_exists(oPlayer) then {
+if instance_exists(oPlayer) then {
 	if (round(oPlayer.y + (oPlayer.sprite_height/2)) > y) or (oPlayer.key_down) then mask_index = -1;
 	else mask_index = sTemporaryBlock;
 }
