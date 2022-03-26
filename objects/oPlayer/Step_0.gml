@@ -103,7 +103,7 @@ if (view_get_hport(0) < self.y) {
 }
 
 /* Drowning */
-if (position_meeting(x, y - 25, oWater)) {
+if (position_meeting(x, y - 12, oWater)) {
 	if (!drowning) {
 		drowning = true;
 		alarm[0] = room_speed * 3;

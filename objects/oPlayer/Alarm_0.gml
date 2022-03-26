@@ -4,4 +4,4 @@ location = {
 	x: x,
 	y: y,
 };
-Death(instance_place(self.x, self.y - 25, oWater), self, DEATH_TYPE.DROWNING, location, current_time);
+Death(instance_place(self.x, self.y - 12, oWater), self, DEATH_TYPE.DROWNING, location, current_time);
