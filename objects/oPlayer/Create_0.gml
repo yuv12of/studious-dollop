@@ -9,6 +9,7 @@ jumpsp = 9;
 collidables = [oBlock, oMovingPlatform];
 
 key_down = 0;
+is_vsp = false;
 
 image_xscale = player_size;
 image_yscale = player_size;
