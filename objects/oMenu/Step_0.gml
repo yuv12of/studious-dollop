@@ -34,7 +34,7 @@ if accept_key {
 	case 1:
 		switch (pos) {
 		// Return to Menu
-		case 2:
+		case 1:
 			menu_level = 0;
 			break;
 		// Supposedly a level
